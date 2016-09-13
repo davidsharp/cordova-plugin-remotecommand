@@ -16,8 +16,8 @@
 	[commandCenter.playCommand addTarget:self action:@selector(onPlay:)];
 	[commandCenter.stopCommand addTarget:self action:@selector(onStop:)];
 	[commandCenter.togglePlayPauseCommand addTarget:self action:@selector(onTogglePlayPause:)];
-	[commandCenter.enableLanguageOptionCommand addTarget:self action:@selector(onEnableLanguageOption:)];
-	[commandCenter.disableLanguageOptionCommand addTarget:self action:@selector(onDisableLanguageOption:)];
+	//[commandCenter.enableLanguageOptionCommand addTarget:self action:@selector(onEnableLanguageOption:)];
+	//[commandCenter.disableLanguageOptionCommand addTarget:self action:@selector(onDisableLanguageOption:)];
 	[commandCenter.nextTrackCommand addTarget:self action:@selector(onNextTrack:)];
 	[commandCenter.previousTrackCommand addTarget:self action:@selector(onPreviousTrack:)];
 	[commandCenter.seekForwardCommand addTarget:self action:@selector(onSeekForward:)];
@@ -65,10 +65,10 @@
 		remoteCenter.stopCommand.enabled = enabled;
 	} else if ([cmd isEqual: @"togglePlayPause"]) {
 		remoteCenter.togglePlayPauseCommand.enabled = enabled;
-	} else if ([cmd isEqual: @"enableLanguageOption"]) {
-		remoteCenter.enableLanguageOptionCommand.enabled = enabled;
-	} else if ([cmd isEqual: @"disableLanguageOption"]) {
-		remoteCenter.disableLanguageOptionCommand.enabled = enabled;
+	//} else if ([cmd isEqual: @"enableLanguageOption"]) {
+	//	remoteCenter.enableLanguageOptionCommand.enabled = enabled;
+	//} else if ([cmd isEqual: @"disableLanguageOption"]) {
+	//	remoteCenter.disableLanguageOptionCommand.enabled = enabled;
 	} else if ([cmd isEqual: @"nextTrack"]) {
 		remoteCenter.nextTrackCommand.enabled = enabled;
 	} else if ([cmd isEqual: @"previousTrack"]) {
